@@ -72,4 +72,4 @@ Merged$subject <- rownames(Merged)
 Melted <- melt(Merged, id = c("subject", "label"))
 Melted <- dcast(Melted, subject + label~variable, mean)
 
-write.table(Melted, file = "tidy_data.csv", row.names = FALSE)
+write.table(Melted, file = "tidy_data.txt", row.names = FALSE)
