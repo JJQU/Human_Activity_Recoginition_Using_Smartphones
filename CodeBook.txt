@@ -1,0 +1,62 @@
+CODEBOOK
+
+Introduction
+
+This codeboook is created as part of Peer-Graded Assignment for course Getting and Cleaning Data instructed by Jeff Leek from Johns Hopkins University.
+This codebook provides a description of raw data, tidy data, and transformations that are performed to clean up the data. 
+
+Human Activity Recognition Using Smartphones Dataset
+
+The experiments had carried out with a group of 30 volunteers within the age range from 19 to 48 years old. 
+The data were collected from Samsung Galaxy S II smartphone that each volunteer wore on his/her waist.
+Each volunteer performed six activities while wearing the smartphone. 
+The collected data was then splited into two sets, train and test. 
+The train set contains 70% of the data from 21 volunteers. The test set contains 30% of the data from 9 volunteers.
+The experiment used embedded accelerometer and gyroscope to capture 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz
+
+The files related to this projects are:
+
+- 'README.txt'
+
+- 'features_info.txt': Shows information about the variables used on the feature vector.
+
+- 'features.txt': List of variables of each feature vector. 
+
+- 'activity_labels.txt': Contains 6 activities. Links the class labels with their activity name. 
+
+- 'train/X_train.txt': Training set.
+
+- 'train/y_train.txt': Training labels.
+
+- 'test/X_test.txt': Test set.
+
+- 'test/y_test.txt': Test labels.
+
+- 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample in trainning set
+
+- 'test/subject_test.txt': Each row identifies the subject who performed the activity for each window sample in test set
+
+A full description can be obtained on UCI website.
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones#
+
+
+Data Processing:
+1. set working directory
+2.download file from the url for the project
+3.unzip the file
+4.load features and activity lables
+5. load train datasets
+a.load X_train and assign feature name to each column
+b.load y_train
+c.load subject_train
+d.combine a.b.c to create a train dataset
+6.load test datasets
+a.load X_test and assign feature name to each column
+b.load y_test
+c.load subject_test
+d. combine a.b.c to create a test dataset
+7.merge two data sets together to create one data set
+8. extracted only the measurements on the mean and standard deviation for each measurement
+9.uses descriptive activity names to name the activities in the data set
+10. appropriately labels the data set with descriptive variable names
+
